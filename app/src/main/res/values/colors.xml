@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="text_color">#fff</color>
+    <color name="grey">#E9E7E7</color>
+
+    <color name="bottom_nav_checked">#008577</color>
+    <color name="bottom_nav_not_checked">#969292</color>
+    <color name="white">#fff</color>
+    <color name="item_title">#19191B</color>
+    <color name="item_posttime">#969292</color>
+    <color name="item_play">#969292</color>
+</resources>

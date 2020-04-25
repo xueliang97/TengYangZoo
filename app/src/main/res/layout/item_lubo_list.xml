@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_lubo_list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="10dp">
+        
+        <ImageView
+            android:id="@+id/item_lubo_list_cover"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            tools:src ="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:id="@+id/item_lubo_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="斤斤计较急急急急急急急急急急急急急急急斤斤计较"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/item_title_size"/>
+
+            <TextView
+                android:id="@+id/item_lubo_list_posttime"
+                android:layout_below="@id/item_lubo_list_title"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_posttime"
+                android:textSize="@dimen/item_posttime_size"
+                tools:text="2020-03-30"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bofangshu"/>
+
+                <TextView
+                    android:id="@+id/item_lubo_list_play"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="start"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/item_play_size"
+                    android:textColor="@color/item_play"
+                    tools:text="1113.4万"/>
+
+                <ImageView
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/danmaku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/item_lubo_list_danmaku"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/item_play_size"
+                    android:textColor="@color/item_play"
+                    tools:text="6666"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
